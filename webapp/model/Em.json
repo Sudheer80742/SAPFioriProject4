@@ -1,0 +1,23 @@
+{
+    "Details":[
+        {
+            "id":1,
+            "name":"sudheer",
+            "address":"Chirala"
+        },
+        {
+            "id":2,
+            "name":"lakshmi",
+            "address":"guntur"
+        },
+        {
+            "id":3,
+            "name":"vanitha",
+            "address":"HYD"
+        }, {
+            "id":4,
+            "name":"sravs",
+            "address":"HYD"
+        }
+    ]
+}

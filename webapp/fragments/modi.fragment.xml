@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+<l:VerticalLayout>
+<Label text="id"/>
+<Input id="id2"/>
+<Label text="Name"/>
+<Input id="name2"/>
+<Label text="Address"/>
+<Input id="add2"/>
+<Button text="Update" press="onModi"/>
+</l:VerticalLayout>
+</core:FragmentDefinition>

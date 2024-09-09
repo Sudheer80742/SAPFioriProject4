@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+<VBox>
+<Label text="id"/>
+<Input placeholder="Enter Your Id" id="id1"/>
+<Label text="Name"/>
+<Input placeholder="Enter Your name" id="name1"/>
+<Label text="Address"/>
+<Input placeholder="Enter Your address" id="add1"/>
+<Button text="Add" press="onAdd"/>
+</VBox>
+</core:FragmentDefinition>

@@ -1,0 +1,79 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.uxap"
+    xmlns:m="sap.m"
+    controllerName="project8.controller.View1">
+
+    <ObjectPageLayout id="ObjectPageLayout" upperCaseAnchorBar="false">
+        <headerTitle>
+            <ObjectPageHeader objectTitle="CRUD Operations"/>
+        </headerTitle>
+ 
+        <sections>
+            <ObjectPageSection titleUppercase="false" title="All Data">
+                <subSections>
+                    <ObjectPageSubSection >
+                        <blocks>
+                <m:Table items="{/Details}">
+                    <m:columns>
+                    <m:Column ><m:Text text="id"></m:Text></m:Column>
+                      <m:Column ><m:Text text="Name"></m:Text></m:Column>
+                        <m:Column ><m:Text text="Address"></m:Text></m:Column>
+                          <m:Column ></m:Column>
+                            <m:Column ></m:Column>
+                    </m:columns>
+                    <m:items>
+                    <m:ColumnListItem>
+                    <m:cells>
+                     <m:Text text="{id}"/>
+                     <m:Text text="{name}"/>
+                      <m:Text text="{address}"/>
+                    <m:Button type="Up" press="onModify" icon="sap-icon://edit"/>
+                      <m:Button type="Reject" press="onDelete" icon="sap-icon://delete"/>
+                     </m:cells>
+                     </m:ColumnListItem>
+                     </m:items>
+                </m:Table>
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+            <ObjectPageSection titleUppercase="true" title="Update Data">
+                <subSections>
+                    <ObjectPageSubSection titleUppercase="true">
+                        <blocks>
+                            <m:VBox id="cont2"/>
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+             <ObjectPageSection titleUppercase="true" title="Add Data">
+            <subSections>
+            <ObjectPageSubSection >
+             <blocks>
+                           <m:VBox id="cont1">
+                           </m:VBox>
+                        </blocks>
+                    </ObjectPageSubSection>
+            </subSections>
+            </ObjectPageSection>
+            <ObjectPageSection title="Formatter">
+    <subSections>
+        <ObjectPageSubSection>
+            <blocks>
+                <m:Text
+                    text="{
+                        path: '19',
+                        formatter: '.formatter.status'
+                    }"
+                />
+            </blocks>
+        </ObjectPageSubSection>
+    </subSections>
+</ObjectPageSection>
+        </sections>
+ 
+    </ObjectPageLayout>
+
+
+    
+</mvc:View>
